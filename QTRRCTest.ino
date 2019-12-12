@@ -76,10 +76,10 @@ void loop()
   {
     Serial.print(sensorValues[i]);
     Serial.print('\t');
-    if (sensorValues[i] > 600) {digitalWrite(i + 10, HIGH);}
+    if (sensorValues[i] > 800) {digitalWrite(i + 10, HIGH);}
     else {digitalWrite(i+10, LOW);}
   }
 
   Serial.println(position);
-  delay(250);
+  delay(100);
 }
